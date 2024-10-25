@@ -525,3 +525,23 @@ a.button.facebook {
 a.button.facebook:hover {
     background: #9a8a00;
 }
+
+.swiper-container {
+    width: 100%;
+    height: 400px; /* Thay đổi theo nhu cầu của bạn */
+  }
+  
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff; /* Màu chữ có thể thay đổi */
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: auto; /* Đảm bảo ảnh không bị biến dạng */
+  }
+  
