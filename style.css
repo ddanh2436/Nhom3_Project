@@ -61,6 +61,18 @@ header.sticky a {
 .logo:hover {
   color: #ff0157;
 }
+.logo span {
+  color: #ff0157;
+}
+.logo span:hover {
+  color: #111;
+}
+.logo img{
+  width: 100px;
+  height: 100px;
+  padding-right: 5px;
+  padding-top: 15px;
+}
 
 .navigation {
   position: relative;
@@ -104,6 +116,29 @@ header.sticky ul li a {
   transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+
+.titleText {
+  padding-top: 50px;
+  font-size: 24px; /* Kích thước chữ tiêu đề */
+  margin-bottom: 30px; /* Khoảng cách giữa tiêu đề và hình ảnh */
+  text-align: center;
+}
+
+.content img {
+  padding-left: 400px;
+  max-width: 800px; /* Giới hạn chiều rộng hình ảnh */
+  width: 100%; /* Đảm bảo hình ảnh nhỏ lại theo kích thước container */
+  height: auto; /* Giữ tỷ lệ khung hình */
+  display: block; 
+  margin: 0 auto; /* Căn giữa hình ảnh nếu không sử dụng flexbox */
+}
+
+
+@media (max-width: 768px) {
+  .content img {
+    max-width: 80%; /* Hình ảnh lớn hơn trên màn hình nhỏ */
+  }
+}
 .content {
   max-width: 900px;
   text-align: center;
@@ -352,7 +387,7 @@ section {
   transform: scale(1.1);
 }
 .rules_content {
-  font-size: 21px;
+  font-size: 15px;
   font-style: italic;
   letter-spacing: 2px;
   padding: 2px;
@@ -446,6 +481,74 @@ header.sticky {
 .menuToggle {
   display: none;
 }
+
+.footer {
+  width: 100%; /* Đảm bảo footer phủ toàn màn hình */
+  color: white; /* Màu chữ */
+  padding: 2rem 0; /* Khoảng cách trên và dưới */
+}
+
+.footer_container {
+  display: flex; /* Dùng Flexbox để chia thành 2 phần */
+  justify-content: space-between; /* Cách đều 2 phần */
+  max-width: 1200px; /* Giới hạn chiều rộng nội dung */
+  margin: 0 auto; /* Căn giữa nội dung */
+  padding: 0 2rem; /* Khoảng cách lề 2 bên */
+}
+
+.footer_content {
+  flex: 1; /* Chia đều không gian */
+  padding: 0 1rem; /* Khoảng cách giữa các phần */
+}
+
+.footer_logo-img {
+  width: 100px; /* Giới hạn kích thước logo */
+  margin-bottom: 1rem;
+}
+
+.footer_title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer_description,
+.footer_link {
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.footer_link:hover {
+  color: #ffcc00; /* Màu nổi bật khi hover */
+  transition: 0.3s;
+}
+
+.footer_social-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer_social-icon {
+  width: 24px;
+}
+
+.footer_social-icon:hover {
+  opacity: 0.8; /* Hiệu ứng hover */
+}
+
+.footer_bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  padding-top: 1rem;
+}
+
+.copyright,
+.designer {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  text-align: center; /* Căn giữa trên màn hình nhỏ */
+}
+
 
 /* Các phần responsive cho kích thước nhỏ hơn 768px (tablet, mobile) */
 @media (max-width: 768px) {

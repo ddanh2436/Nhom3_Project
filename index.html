@@ -19,7 +19,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
+    <link 
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
@@ -31,21 +31,29 @@
 
   <body>
     <header class="sticky">
-      <a href="#" class="logo">CCTM</a>
+      <a href="#" class="logo"><img src="img/Logo.png" alt="">CCTM</a>
       <div class="menuToggle" onclick="toggleMenu()"></div>
       <ul class="navigation">
-        <li><a href="#banner">Home</a></li>
-        <li><a href="#about">Introduction</a></li>
-        <li><a href="#explore">About us</a></li>
-        <li><a href="#detail">Our Project</a></li>
-        <li><a href="#source">Source</a></li>
+        <li><a href="#banner">Trang chủ</a></li>
+        <li><a href="#about">Giới thiệu sản phẩm</a></li>
+        <li><a href="#explore">Về chúng tôi</a></li>
+        <li><a href="#detail">Biên bản làm việc nhóm</a></li>
+        <li><a href="#source">Thông tin liên lạc</a></li>
       </ul>
     </header>
     <section class="banner" id="banner">
-      <div class="content"></div>
+      <div class="content">
+      </div>  
     </section>
 
     <section class="about" id="about">
+      <h2 class="titleText"><span>S</span>ản phẩm của tụi mình</h2>
+      <div class="content">
+        <img src="img/POSTER.png" alt="">
+      </div>  
+    </section>
+
+    <section class="about" id="explore">
       <div class="row">
         <div class="col50">
           <h2 class="titleText"><span>T</span>hông tin chung của Nhóm</h2>
@@ -73,16 +81,16 @@
       </div>
     </section>
 
-    <section class="explore" id="explore">
+    <section class="explore">
       <div class="title">
-        <h2 class="titleText"><span>M</span>y Team</h2>
-        <p>Our Team Member</p>
+        <h2 class="titleText"><span>Đ</span>ội làm Phim</h2>
+        <p>Thành viên nhóm chúng mình bao gồm :</p>
       </div>
       <div class="Content">
         <div class="element">
           <div class="box">
             <div class="imgbx1">
-              <img src="img/pexels-red-nguyen-11690877.jpg" alt="" />
+              <img src="img/c782.jpg" alt="" />
             </div>
             <div class="text">
               <h3>Nguyễn Tiến Phát</h3>
@@ -132,7 +140,7 @@
         <div class="element">
           <div class="box">
             <div class="imgbx1">
-              <img src="img/pexels-vitalina-3800117.jpg" alt="" />
+              <img src="img/462562374_1524570671525923_4304686224152981065_n.jpg" alt="" />
             </div>
             <div class="text">
               <h3>Nguyễn Gia Quốc Uy</h3>
@@ -155,7 +163,7 @@
         <div class="element">
           <div class="box">
             <div class="imgbx1">
-              <img src="img/England.jpg" alt="" />
+              <img src="img/lmq.png" alt="" />
             </div>
             <div class="text">
               <h3>Lưu Minh Quân</h3>
@@ -165,7 +173,7 @@
         <div class="element">
           <div class="box">
             <div class="imgbx1">
-              <img src="img/france.jpg" alt="" />
+              <img src="img/e8084f54-9e10-43c2-b241-38d221106470.jpg" alt="" />
             </div>
             <div class="text">
               <h3>Trần Nguyễn Tuấn Minh</h3>
@@ -215,7 +223,7 @@
       </div>
       <section>
 
-      <section class="">
+      <section class="rules">
         <div class="title" style="padding-bottom: 30px;">
           <h2 class="titleText"><span>Q</span>ui tắc và <span>K</span>ế hoạch giao tiếp Nhóm</h2>
         </div>
@@ -256,10 +264,14 @@ Nếu trễ họp quá 10 phút thì sẽ bao nước các thành viên khác. <
       </section>
 
         <div class="title">
-          <h2 class="titleText"><span>O</span>ur Image</h2>
-          <p>Hình ảnh liên quan tới công việc của nhóm</p>
+          <h2 class="titleText"><span>B</span>iên bản họp nhóm</h2>
+          <p>Biên bản được công khai tại link: <a target="_blank" href="https://drive.google.com/drive/u/5/folders/1A4HdbOpAh8nBi25nKEc_0pN6EfNdVVCz" style="text-decoration: none;">này</a> </p>
         </div>
-        <div class="swiper">
+        <div class="title">
+          <h2 class="titleText"><span>B</span>áo cáo tiến độ và minh chứng</h2>
+          <p>Biên bản được công khai tại link: <a target="_blank" href="https://drive.google.com/drive/u/5/folders/10ogyPmZq4xMGfatyOEzcP3AfYQ3D3lmJ" style="text-decoration: none;">này</a> </p>
+        </div>
+        <!-- <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="https://via.placeholder.com/800x400" alt="Image 1" />
@@ -276,10 +288,65 @@ Nếu trễ họp quá 10 phút thì sẽ bao nước các thành viên khác. <
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
           <div class="swiper-scrollbar"></div>
-        </div>
+        </div> -->
       </section>
       
-     
+      <footer class="footer" id="source">
+        <div class="footer_container">
+          <div class="footer_content">
+            <a href="index.html" class="footer_logo">
+              <img src="img/Logo.png" class="footer_logo-img" />
+            </a>
+      
+            <h4 class="footer_subtitle">Contact</h4>
+      
+            <p class="footer_description">
+              <span>Address:</span> 227 Nguyen Van Cu, Phuong 4, District 5, HCM city
+            </p>
+      
+            <p class="footer_description">
+              <span>Phone:</span> 0943192824/(+84) 943192824
+            </p>
+      
+            <p class="footer_description">
+              <span>Work hours:</span> 10:00 -18:00, Mon- Sat
+            </p>
+      
+            <div class="footer_social">
+              <h4 class="footer_subtitle">Follow Us</h4>
+              <div class="footer_social-links">
+                <a href=""><img src="img/icon-facebook.svg" class="footer_social-icon" /></a>
+                <a href=""><img src="img/icon-twitter.svg" class="footer_social-icon" /></a>
+                <a href=""><img src="img/icon-instagram.svg" class="footer_social-icon" /></a>
+                <a href=""><img src="img/icon-pinterest.svg" class="footer_social-icon" /></a>
+                <a href=""><img src="img/icon-youtube.svg" class="footer_social-icon" /></a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="footer_content">
+            <h3 class="footer_title">Address</h3>
+      
+            <ul class="footer_links">
+              <li><a href="" class="footer_link">About Us</a></li>
+              <li><a href="" class="footer_link">Delivery Information</a></li>
+              <li><a href="" class="footer_link">Privacy Policy</a></li>
+              <li><a href="" class="footer_link">Terms & Conditions</a></li>
+              <li><a href="" class="footer_link">Contact Us</a></li>
+              <li><a href="" class="footer_link">Support Center</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="footer_bottom">
+          <p class="copyright">
+            <i class="fa-regular fa-copyright"></i>2024 Duy Anh. All rights reserved
+          </p>
+          <span class="designer">Designed by: Dao Duy Anh</span>
+          <span class="designer">Inspiration by: Youtube</span>
+        </div>
+      </footer>
+      
 
       <script>
         window.addEventListener("scroll", function () {
