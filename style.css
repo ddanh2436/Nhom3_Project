@@ -429,8 +429,8 @@ section {
   position: absolute;
   top: 30%;
   left: 0;
-  width: 450px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   z-index: 1;
   filter: blur(50px);
 }
@@ -457,6 +457,34 @@ section {
 }
 .swiper-button-prev::after {
   display: none;
+}
+.title {
+  margin-bottom: 2rem; /* Khoảng cách giữa các khối tiêu đề */
+}
+
+.titleText {
+  margin: 0; /* Xóa khoảng cách mặc định của h2 */
+  font-size: 1.5rem; /* Tăng kích thước chữ */
+  color: #333; /* Màu tiêu đề */
+}
+
+.title p {
+  margin: 1rem 0; /* Khoảng cách trên dưới của đoạn văn */
+  font-size: 1rem;
+  color: #555; /* Màu chữ đoạn văn */
+}
+
+.title a {
+  display: block; /* Mỗi link xuống hàng */
+  color: #007bff; /* Màu chữ liên kết */
+  font-size: 1rem;
+  margin-top: 0.5rem; /* Khoảng cách giữa các link */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.title a:hover {
+  color: #0056b3; /* Màu nổi bật khi hover */
 }
 
 header.sticky {
