@@ -510,64 +510,91 @@ header.sticky {
   display: none;
 }
 
+/* Căn chỉnh toàn bộ footer */
 .footer {
-  width: 100%; /* Đảm bảo footer phủ toàn màn hình */
-  color: white; /* Màu chữ */
-  padding: 2rem 0; /* Khoảng cách trên và dưới */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa theo chiều ngang */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+  background-color: #f8f9fa; /* Thêm màu nền nếu cần */
+  padding: 2rem 1rem; /* Khoảng cách trong phần footer */
+  width: 100%; /* Đảm bảo chiều rộng full màn hình */
+  box-sizing: border-box; /* Bao gồm padding trong kích thước */
 }
 
+/* Căn chỉnh nội dung container */
 .footer_container {
-  display: flex; /* Dùng Flexbox để chia thành 2 phần */
-  justify-content: space-between; /* Cách đều 2 phần */
-  max-width: 1200px; /* Giới hạn chiều rộng nội dung */
-  margin: 0 auto; /* Căn giữa nội dung */
-  padding: 0 2rem; /* Khoảng cách lề 2 bên */
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Căn giữa các cột */
+  align-items: flex-start; /* Căn đầu nội dung theo chiều dọc */
+  gap: 2rem; /* Khoảng cách giữa các cột */
+  max-width: 1200px; /* Giới hạn chiều rộng cho footer */
+  width: 100%;
 }
 
+/* Footer content */
 .footer_content {
-  flex: 1; /* Chia đều không gian */
-  padding: 0 1rem; /* Khoảng cách giữa các phần */
+  flex: 1; /* Mỗi cột chiếm khoảng bằng nhau */
+  text-align: center; /* Căn giữa nội dung bên trong */
 }
 
 .footer_logo-img {
-  width: 100px; /* Giới hạn kích thước logo */
-  margin-bottom: 1rem;
+  width: 100px; /* Kích thước logo */
+  margin-bottom: 1rem; /* Khoảng cách giữa logo và nội dung */
 }
 
 .footer_title {
   font-size: 1.25rem;
   margin-bottom: 1rem;
+  color: #333;
 }
 
-.footer_description,
+.footer_subtitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.footer_links {
+  list-style: none;
+  padding: 0;
+}
+
 .footer_link {
-  margin-bottom: 0.5rem;
   text-decoration: none;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+  display: block;
+  transition: color 0.3s ease;
 }
 
 .footer_link:hover {
-  color: #ffcc00; /* Màu nổi bật khi hover */
-  transition: 0.3s;
-}
-
-.footer_social-links {
-  display: flex;
-  gap: 0.5rem;
+  color: #0056b3;
 }
 
 .footer_social-icon {
-  width: 24px;
+  width: 24px; /* Adjust icon size */
+  height: 24px; /* Maintain square ratio */
+  opacity: 0.8; /* Slight transparency for a sleek look */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
 }
 
 .footer_social-icon:hover {
-  opacity: 0.8; /* Hiệu ứng hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  opacity: 1; /* Fully opaque on hover */
 }
 
+
+/* Footer bottom */
 .footer_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa nội dung */
   text-align: center;
   margin-top: 2rem;
+  color: #777;
   font-size: 0.875rem;
-  padding-top: 1rem;
 }
 
 .copyright,
