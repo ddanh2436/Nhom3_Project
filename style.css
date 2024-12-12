@@ -192,15 +192,10 @@ section {
   justify-content: space-between;
 }
 
-.col50 {
-  position: relative;
-  width: 48%;
-}
-
-.col50 img:hover {
-  transition: all 1s ease-in-out;
-  transform: scale(1.2);
-  opacity: 0.9;
+.row p{
+  color: #111;
+  font-size: large;
+  padding-top: 10px;
 }
 
 .titleText {
