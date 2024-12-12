@@ -139,10 +139,6 @@ header.sticky ul li a {
     max-width: 80%; /* Hình ảnh lớn hơn trên màn hình nhỏ */
   }
 }
-.content {
-  max-width: 900px;
-  text-align: center;
-}
 
 .content h2 {
   font-size: 70px;
@@ -163,6 +159,62 @@ header.sticky ul li a {
 .content p:hover {
   transition: all 2s ease-in-out;
 }
+
+/* Phần chính của section */
+.about {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+/* Nội dung bên trong căn giữa */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem; /* Khoảng cách giữa các phần tử */
+}
+
+/* Poster căn giữa */
+/* Container tổng */
+.poster-container {
+  display: flex;
+  justify-content: center; /* Căn giữa ngang */
+  align-items: center; /* Căn giữa dọc */
+  flex-direction: column; /* Đảm bảo tiêu đề và poster nằm theo cột */
+  height: 100%; /* Đảm bảo chiếm hết chiều cao nếu cần */
+  width: 100%; /* Đảm bảo poster nằm giữa màn hình */
+  text-align: center;
+  padding: 20px; /* Khoảng cách giữa poster và viền */
+  box-sizing: border-box; /* Bao gồm padding trong chiều rộng/chiều cao */
+}
+
+/* Căn chỉnh ảnh poster */
+.poster {
+  max-width: 50%; /* Không cho ảnh vượt quá 80% chiều ngang màn hình */
+  height: auto; /* Giữ tỷ lệ gốc */
+  border: 2px solid #ddd; /* Thêm viền xung quanh nếu cần */
+  border-radius: 10px; /* Bo góc mềm mại */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ cho nổi bật */
+  margin: 10px auto; /* Thêm khoảng cách giữa các phần tử */
+}
+
+/* Video căn giữa và kích thước phù hợp */
+.centered-video {
+  width: 80%; /* Kích thước video */
+  max-width: 800px; /* Giới hạn kích thước tối đa */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Tiêu đề nhỏ cho video */
+.video-title {
+  font-size: 1.5rem;
+  color: #555;
+  margin: 0;
+}
+
 
 .btn {
   font-size: 1em;
@@ -190,7 +242,7 @@ section {
   width: 100%;
   display: flex;
   justify-content: space-between;
-}
+} 
 
 .row p{
   color: #111;
